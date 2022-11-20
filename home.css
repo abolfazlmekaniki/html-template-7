@@ -1,0 +1,155 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom ,  #360033,#0b8793 ) ;
+    scroll-behavior: smooth;
+}
+
+.ul-{
+
+    width: 100%;
+    height: 50px;
+    /* background-image: inherit; */
+    text-align: center;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.li-{
+
+    padding: 15px;
+    background-color: rgb(255,255,255,0.6);
+    display: inline-block;
+    
+    border-radius: 5px;
+
+}
+
+.li-:hover{
+
+    background-color: rgb(255,255,255);
+}
+
+.li-a{
+    text-decoration: none;
+    color: #0b8793;
+}
+
+
+
+.box-shadow-{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+    padding: 60px;
+    align-items: flex-start;
+    background: linear-gradient(to right ,  #abbaab,#ffffff );
+}
+
+.text-shadow-{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+    padding: 60px;
+    align-items: flex-start;
+    background: linear-gradient(to right ,  #556270,  #ff6b6b );
+    margin-bottom: 200px;
+}
+
+.box-sample-1{
+    display: flex;
+    width: 20%;
+    height: 200px;
+    background-color:rgba(248, 154, 3, 0.859); 
+    display: inline-block;
+    border-radius: 5px;
+}
+.text-sample-2{
+    display: flex;
+    width: 20%;
+    font-size: 50px;
+    height: 200px;
+    display: inline-block;
+}
+#samp1-h{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+
+}
+
+#samp1-v{
+    width: 215px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+
+}
+
+#samp1-c{
+    margin-top: 10px;
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+#samp2-h{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+
+}
+
+#samp2-v{
+    width: 215px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+
+}
+
+#samp2-c{
+    margin-top: 10px;
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+
+}

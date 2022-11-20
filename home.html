@@ -1,0 +1,124 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./home.css">
+    
+    
+  </head>
+  <body id="body">
+    
+
+      <ul class="ul-">
+
+        <a class="li-a" href="#box-shadow-"><li class="li-">box-shadow</li></a>
+        <a class="li-a" style="margin-left: 30px;" href="#text-shadow-"><li class="li-">text-shadow</li></a>
+  
+
+      </ul>
+
+      
+
+      <div class="box-shadow-" id="box-shadow-" title="BOX-SHADOW" >
+
+        <div class="box-sample-1" id="box-sample-1"></div>
+
+        <p id="demo" style="margin-top: 75px">boxShadow : 0px 0px </p>
+
+        <div>
+          horizontal-shadow : <input type="number" name="samp1-h" id="samp1-h"  onchange="samp1h()">
+          <br>
+          vertical-shadow : <input type="number" name="samp1-v" id="samp1-v"  onchange="samp1h()">
+          <br>
+          
+          color : <input type="color" name="samp1-c" id="samp1-c"  onchange="samp1h()">
+          
+        
+        </div>
+
+
+      </div>
+
+
+      <div class="text-shadow-" id="text-shadow-" title="TEXT-SHADOW" >
+
+        <p class="text-sample-2" id="box-sample-2">Abolfazl</p>
+
+        <p id="demo1" style="margin-top: 75px">textShadow : 0px 0px </p>
+
+        <div>
+          horizontal-shadow(from -100px to 100px) : <input type="range" min="-100" max="+100" name="samp2-h" id="samp2-h"  onchange="samp2h()">
+          <br>
+          vertical-shadow(from -100px to 100px) : <input type="range"  min="-100" max="+100" name="samp2-v" id="samp2-v"  onchange="samp2h()">
+          <br>
+          
+          color : <input type="color" name="samp2-c" id="samp2-c"  onchange="samp2h()">
+          
+        
+        </div>
+
+
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="glyphicon glyphicon-triangle-top"></i></button>
+
+  <script>
+
+    function samp1h(){
+      var x1=document.getElementById("samp1-h").value;
+      var x2=document.getElementById("samp1-v").value;
+      var x3=document.getElementById("samp1-c").value;
+      document.getElementById("demo").innerHTML= "boxShadow : "+x1+"px"+" "+x2+"px"+" "+x3;
+      document.getElementById("box-sample-1").style.boxShadow=x1+"px"+" "+x2+"px"+" "+x3;
+
+    }
+
+    function samp2h(){
+      var x1=document.getElementById("samp2-h").value;
+      var x2=document.getElementById("samp2-v").value;
+      var x3=document.getElementById("samp2-c").value;
+      document.getElementById("demo1").innerHTML= "textShadow : "+x1+"px"+" "+x2+"px"+" "+x3;
+      document.getElementById("box-sample-2").style.textShadow=x1+"px"+" "+x2+"px"+" "+x3;
+
+    }
+
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    // window.onscroll = function() {scrollFunction()};
+
+    // function scrollFunction() {
+    //   console.log(document.documentElement.scrollTop);
+    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //     mybutton.style.display = "block";
+    //   } else {
+    //     mybutton.style.display = "none";
+    //   }
+    // }
+
+    // // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    const scroller = document.querySelector("#body");
+    scroller.addEventListener("scroll", (event) => {
+
+      console.log(scroller.scrollTop);
+      if(scroller.scrollTop>724){
+        mybutton.style.display = "block";
+      }
+      else{
+        mybutton.style.display = "none";
+      }
+}
+)
+
+  </script>
+</html>
